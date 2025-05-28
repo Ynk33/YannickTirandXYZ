@@ -1,0 +1,68 @@
+<section class="header" id="header">
+  {{ with .Site.Data.content.hero }}
+    <div class="header-background" style="background: {{ .background_color }}"></div>
+
+    <div class="container head-container">
+      <div class="row h-100 align-items-center">
+
+        <div class="col-4 d-none d-md-flex">
+          <div class="profile" style="background-image: url('{{ .profile_picture | relURL }}')"></div>
+        </div>
+
+        <div class="col-12 col-md-8">
+          <h1 class="introduction">{{ .title | markdownify | emojify }}</h1>
+
+          <div class="animated-text">
+            <strong class="cd-headline clip">
+              <span class="cd-words-wrapper">
+                {{ range $index, $elements := .occupations }}
+                  {{ if eq $index 0 }}
+                    <b class="is-visible">{{ . }}</b>
+                  {{ else }}
+                    <b>{{ . }}</b>
+                  {{ end }}
+                {{ end }}
+              </span>
+            </strong>
+          </div>
+
+          <p class="about">
+            {{ .about | markdownify | emojify }}
+          </p>
+
+          {{ if .button.enable }}
+            {{ with .button }}
+              <a class="hireMe button" href="{{ .link | relURL }}">{{ .label }}</a>
+            {{ end }}
+          {{ end }}
+
+          <div class="container header-icons">
+            <div class="row">
+              {{ range $.Site.Params.social }}
+                <div class="col-auto">
+                  <a href="{{ .link | safeURL }}" target="_blank" rel="noreferrer">
+                    <i class="{{ .icon }} header-icon" aria-label="{{ .alt }}"></i>
+                  </a>
+                </div>
+              {{ end }}
+
+              {{ with .hire_me }}
+                <div class="col-12 col-md-6">
+                  <a href="{{ .link | safeURL }}" target="_blank" rel="noreferrer" class="button download-cv">
+                    {{ .label }}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-to-line-icon lucide-arrow-down-to-line">
+                      <path d="M12 17V3"/>
+                      <path d="m6 11 6 6 6-6"/>
+                      <path d="M19 21H5"/>
+                    </svg>
+                  </a>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</section>
+<div class="end-header"></div>

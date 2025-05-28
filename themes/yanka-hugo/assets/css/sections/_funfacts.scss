@@ -1,0 +1,33 @@
+/*--------------------------------
+  Start Fun Facts
+----------------------------------*/
+.fun-facts {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  flex-wrap: wrap;
+}
+.fun-fact-holder {
+  width: 130px;
+  img {
+    display: block;
+    margin: auto;
+    width: 50px;
+  }
+  p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: -10px;
+    color: #6f6f6f;
+    font-weight: 700;
+  }
+  .fact-counter {
+    text-align: center;
+    font-weight: 700;
+    font-size: 21px;
+    margin-top: 13px;
+  }
+}
+/*--------------------------------
+  End Fun Facts
+----------------------------------*/

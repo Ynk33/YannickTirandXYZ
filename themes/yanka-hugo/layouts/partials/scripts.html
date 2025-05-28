@@ -1,0 +1,32 @@
+{{ "<!-- JS Plugins -->" | safeHTML }} {{ range .Site.Params.plugins.js }}
+<script src="{{ .link | relURL }}"></script>
+{{ end }} {{ "<!-- Main Scripts -->" | safeHTML }} {{ $script := resources.Get
+"js/script.js" | minify }}
+<script src="{{ $script.RelPermalink }}"></script>
+{{ $script := resources.Get "js/hugrid.custom.js" | minify }}
+<script src="{{ $script.RelPermalink }}"></script>
+
+<script>
+
+    setExperienceHeight = function() {
+        var experiences = document.querySelectorAll(".experience-col");
+        var top = 0
+        for (var i = 0; i < experiences.length; i++) {
+            var experience = experiences[i];
+            if (i == 0) continue; // Skip the first child
+
+            // Set the top position of each child based on the previous child's height
+            top += experiences[i - 1].offsetHeight * 0.66;
+            experience.style.top = top + "px";
+        }
+
+        var firstChild = experiences[0];
+        var lastChild = experiences[experiences.length - 1];
+        var height = lastChild.offsetTop + lastChild.offsetHeight - firstChild.offsetTop;
+        document.getElementById("experience").children[0].children[1].style.height = height + "px";
+    }
+
+    // Set the experience section height to match its content.
+    $(document).ready(setExperienceHeight);
+    $(window).resize(setExperienceHeight);
+</script>

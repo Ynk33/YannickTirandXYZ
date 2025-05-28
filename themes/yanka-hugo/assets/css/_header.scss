@@ -1,0 +1,100 @@
+/*--------------------------------
+  Start Header
+----------------------------------*/
+/* ========= Header ======= */
+.header {
+  position: relative;
+  height: 100%;
+  min-height: 420px;
+
+  .header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .head-container {
+    height: 100%;
+    color: white;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif !important;
+    font-weight: 300;
+    z-index: 10;
+
+    .profile {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background-position: 50% 25%;
+      background-size: cover; 
+    }
+
+    .about {
+      font-size: 20px;
+    }
+
+    .header-icons {
+      list-style: none;
+      margin-top: 1.7rem;
+
+      li {
+        margin-right: 1rem;
+      }
+      
+      a {
+        color: white;
+        background: transparent;
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.7;
+        }
+
+        .header-icon  {
+          font-size: 1.5em;
+        }
+      }
+
+      .download-cv {
+        margin-top: 0;
+        padding: 0.5rem 1.5rem;
+
+        color: #008899;
+        font-size: 1rem;
+        font-weight: 400;
+
+        border: none;
+        border-radius: 50px;
+        background-color: white;
+
+        &:hover {
+          color: #008899 !important;
+        }
+
+        svg {
+          margin-left: 5px
+        }
+      }
+    }
+  }
+}
+
+/* ========= Full Screen Navigation ======= */
+@keyframes "move" {
+  0% {
+    top: 0px;
+  }
+  33% {
+    top: -30px;
+  }
+  67% {
+    top: -60px;
+  }
+}
+/*--------------------------------
+  End Header
+----------------------------------*/

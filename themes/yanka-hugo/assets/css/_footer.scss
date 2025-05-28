@@ -1,0 +1,51 @@
+/*--------------------------------
+  Start Footer
+----------------------------------*/
+.footer {
+  padding: 70px 0;
+  position: relative;
+  z-index: 2;
+  hr {
+    border: 1px solid #fff;
+    margin-bottom: 5px;
+  }
+}
+.footer-icons {
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  margin-top: 15px;
+
+  div {
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    color: #313131;
+    font-size: 17px;
+    margin: 0 8px;
+  }
+  .fa {
+    transition: all 0.3s;
+    background: #fff;
+    padding: 7px;
+    &:hover {
+      transform: translateY(5px);
+    }
+  }
+}
+.credit {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.footer-icon {
+  &:hover {
+    color: #818aa3;
+  }
+}
+/*--------------------------------
+  End Footer
+----------------------------------*/

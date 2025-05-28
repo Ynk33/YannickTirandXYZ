@@ -1,0 +1,49 @@
+/*--------------------------------
+ Start Experience
+----------------------------------*/
+.experience {
+  padding: 70px 0;
+  box-sizing: border-box;
+
+  .experience-col {
+    position: relative;
+
+    span {
+      font-weight: 700;
+      color: #6f6f6f;
+    }
+    p {
+      color: #6f6f6f;
+    }
+
+    .border-right {
+      border-right: 2px solid #4d4d4d;
+    }
+
+    .border-left {
+      border-left: 2px solid #4d4d4d;
+      left: calc(50% - 2px);
+    }
+
+    &:after {
+      position: absolute;
+      top: 0;
+      left: calc(50% - 10px);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid #4d4d4d;
+      background: #fff;
+      content: '';
+      transition: background-color 0.7s;
+    }
+    &:hover {
+      &:after {
+        background: #4d4d4d;
+      }
+    }
+  }
+}
+/*--------------------------------
+ End Experience
+----------------------------------*/

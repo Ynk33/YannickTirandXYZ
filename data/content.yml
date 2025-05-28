@@ -1,0 +1,153 @@
+########################## hero area ##########################
+hero:
+  title: "I'm Yannick Tirand"
+
+  # animated text loop
+  occupations:
+    - 'Software Engineer'
+    - 'Full Stack Developer'
+    - 'Unity Game Designer'
+  
+  # background color
+  background_color: '#008899'
+
+  # about
+  about: "Problem-solver, team player, and full-stack developer who believes great software comes from great collaboration. **Let’s build something great together!**"
+  profile_picture: 'images/profile.png'
+
+  # hire me
+  hire_me:
+    enable: true
+    label: 'MY RESUME'
+    link: documents/Yannick_Tirand_CV.pdf
+    icon: 'fa-download'
+
+############################# portfolio ################################
+portfolio:
+  enable: true
+  title: 'MY WORK'
+  portfolio_list:
+    - name: "Jeux.com — Nimrod"
+      image: 'images/portfolio/jeuxcom.jpg'
+      url: http://www.jeux.com/
+      description: Nimrod is a unified backend designed to manage game libraries such as Jeux.com. It is a REST API built with Laravel, designed to be used by frontends such as Jeux.com and other game platforms. It allows users to manage their game libraries, including adding, removing, and updating games, as well as tracking their progress and achievements. The frontends are built with ReactJS for a responsive and dynamic user experience.
+      skills:
+        - name: 'Laravel'
+          icon: 'images/icons/laravel.svg'
+        - name: 'ReactJS'
+          icon: 'images/icons/react.svg'
+
+    - name: Alumnforce
+      image: 'images/portfolio/alumnforce.jpg'
+      url: https://www.alumnforce.com/
+      description: Alumnforce is a SaaS platform designed to help alumni associations manage their members and events. It used to be built with Zend as monolithic backend, but I worked on shifting it to a more modern architecture using Laravel with each feature designed as a service to easily build a tailored product for each client. This transition improved its scalability and maintainability, allowing for the addition of new features and better performance, while also reducing the heavy technical debt of the old solution.
+      skills:
+        - name: 'Laravel'
+          icon: 'images/icons/laravel.svg'
+
+    - name: Rallye des P&eacute;pites
+      image: 'images/portfolio/rdp.jpg'
+      url: https://www.rallyedespepites.com/
+      description: "'Le Rallye des Pépites' is an event that allows local business to be discovered by the local community through a fun and engaging treasure hunt. The project was developed with Gravity Goat, where I created a custom backend using Laravel to manage the events' data, including registered businesses, participants, and each team's custom agenda."
+      skills:
+        - name: 'Laravel'
+          icon: 'images/icons/laravel.svg'
+        - name: 'CI'
+          icon: 'images/icons/ci.svg'
+
+    - name: Gravity Goat
+      image: 'images/portfolio/gg.png'
+      description: A team of three, we co-founded Gravity Goat to create hyper-casual mobile games. Working with world-leading publishers, we had to deliver several high-quality prototypes each month. To cope with the fast-paced environment, we built our own toolsets to accelerate our iteration speed and set up CI processes to automate our builds. We also created several custom Unity packages to share our tools and assets across all our projects. My deep knowledge in software engineering allowed me to efficiently design and implement these tools, ensuring they were robust and easy to use for the entire team.
+      skills:
+        - name: 'Unity'
+          icon: 'images/icons/unity.svg'
+        - name: 'CI'
+          icon: 'images/icons/ci.svg'
+
+    - name: YankaForge — Yankify
+      image: 'images/portfolio/yankaforge.jpg'
+      url: https://github.com/Ynk33/YankaForge
+      description: While being on professional hiatus, I worked on several personal projects to stay up to date with the latest technologies. YankaForge is a headless Wordpress theme designed to use the powerful Wordpress back-office as a REST API. Yankify is a NextJS frontend that consumes the YankaForge API to create a fast and responsive website. Alongside those projects, I also created a set of tools based on NodeJS and the Github API to accelerate the development and the deployment of projects based on YankaForge and Yankify.
+      skills:
+        - name: 'NextJS'
+          icon: 'images/icons/nextjs.svg'
+        - name: 'ReactJS'
+          icon: 'images/icons/react.svg'
+        - name: 'Wordpress'
+          icon: 'images/icons/wordpress.svg'
+        - name: 'CI'
+          icon: 'images/icons/ci.svg'
+
+
+###########################3 Experience ##############################
+experience:
+  enable: true
+  title: 'EXPERIENCE'
+  experience_list:
+    - name: Professional Break
+      duration: '2023-2025'
+      content: I chose to take a career hiatus to focus on personal growth and skill enhancement. I traveled, hiked, broadened my comfort zone, and developed personal projects to keep up with evolving technologies like NextJS, ReactJS, and TypeScript.
+
+    - name: Founder - Unity Game Designer
+      company: Gravity Goat
+      duration: '2019-2023'
+      content: "After a year of experimenting with mobile games, I co-founded Gravity Goat with two other talented developers. We focused on creating hyper-casual mobile games, working with the biggest publishers in the industry. We built a strong team, created our own toolsets to accelerate our iteration speed, and set up CI processes to automate our builds and tests."
+
+    - name: Unity Game Designer
+      company: Freelance
+      duration: '2018-2019'
+      content: "I left web development to focus on my initial passion: game development. Strong from the experience of many game jams, I started experimenting with mobile game prototypes. I got noticed by several international publishers, which led me to create my own company, Gravity Goat, with two other talented developers."
+
+    - name: Backend Web Developer
+      company: Mevia
+      duration: '2017-2018'
+      content: Surrounded by a team of talented developers, I worked on the maintenance of Alumnforce, a SaaS platform for alumni associations. First designed with Zend, the goal was to shift the backend to Laravel to improve its scalability and deal with its heavy technical debt, while also adding new features to the platform.
+
+    - name: Software Engineer
+      company: ConcoursMania
+      duration: '2012-2017'
+      content: Mobile games, web landing pages, Laravel backends, and more. I evolved as fast as the company did, using my solid understanding of software engineering to adapt to the ever-changing needs of the business. I also had the chance to lead the AGILE sprint review meetings to discuss with the team about their concerns and expectations and to help them improve their work environment.  
+    
+    - name: Master Degree in Software Engineering
+      company: EPSI
+      duration: '2007-2012'
+      content: I graduated from EPSI, a top French school in software engineering. While learning a lot about software development, project management, and team collaboration, I also had the chance to work on several projects, including a datamap application that was displayed in the Cité des Sciences et de l'Industrie in Paris.
+
+############################### Skill #################################
+skill:
+  enable: true
+  title: 'SKILLS'
+  skill_list:
+    - name: 'NextJS'
+      icon: 'images/icons/nextjs.svg'
+
+    - name: 'ReactJS'
+      icon: 'images/icons/react.svg'
+
+    - name: 'Laravel'
+      icon: 'images/icons/laravel.svg'
+
+    - name: 'Wordpress'
+      icon: 'images/icons/wordpress.svg'
+
+    - name: 'Unity'
+      icon: 'images/icons/unity.svg'
+
+    - name: 'CI'
+      icon: 'images/icons/ci.svg'
+
+######################### funfacts #############################3
+funfacts:
+  enable: true
+  funfacts_list:
+    - name: 'YEARS OF EXPERIENCE'
+      image: 'images/icons/web-development.png'
+      count: '13'
+
+    - name: 'CUPS PER DAY'
+      image: 'images/icons/coffee.png'
+      count: '2'
+
+    - name: 'COUNTRIES VISITED'
+      image: 'images/icons/world.png'
+      count: '25'
