@@ -19,6 +19,7 @@ bin-release/
 
 # Hugo
 public/
+_gen/
 
 # Backup Files
 *.markdown~
