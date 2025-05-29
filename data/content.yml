@@ -9,8 +9,7 @@ hero:
     - 'Unity Game Designer'
   
   # background color
-  # background_color: '#008899'
-  background_color: '#ff8899'
+  background_color: '#008899'
 
   # about
   about: "Problem-solver, team player, and full-stack developer who believes great software comes from great collaboration. **Let’s build something great together!**"
