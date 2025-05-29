@@ -1,9 +1,9 @@
 <section class="header" id="header">
-  {{ with .Site.Data.content.hero }}
-    <div class="header-background" style="background: {{ .background_color }}"></div>
+  <div class="header-background" style="background: {{ .Site.Data.content.hero.background_color }}"></div>
 
-    <div class="container head-container">
-      <div class="row h-100 align-items-center">
+  <div class="container head-container">
+    {{ with .Site.Data.content.hero }}
+      <div class="row header-content align-items-center">
 
         <div class="col-4 d-none d-md-flex">
           <div class="profile" style="background-image: url('{{ .profile_picture | relURL }}')"></div>
@@ -62,7 +62,20 @@
           </div>
         </div>
       </div>
+    {{ end }}
+
+    <div class="row scroll-down">
+      <div class="col-12">
+        <div class="scroll-down text-center">
+          {{ $first := index (.Site.Menus.main) 1 }}
+          <a href="{{ $first.URL }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down chevron">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
-  {{ end }}
+  </div>
 </section>
 <div class="end-header"></div>
