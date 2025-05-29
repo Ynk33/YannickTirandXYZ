@@ -25,19 +25,22 @@
     font-weight: 300;
     z-index: 10;
 
+    display: flex;
+    flex-flow: column;
+
     .header-content {
-      height: 80%;
+      flex: 1 1 auto;
     }
 
     .scroll-down {
-      height: 20%;
+      flex: 0 1 auto;
 
       a {
         color: white;
       }
 
       .chevron {
-        height: 128px;
+        height: 70px;
         aspect-ratio: 1;
         opacity: 0.33;
       }

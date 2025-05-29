@@ -47,7 +47,7 @@
               {{ end }}
 
               {{ with .hire_me }}
-                <div class="col-12 col-md-6">
+                <div class="col-auto">
                   <a href="{{ .link | safeURL }}" target="_blank" rel="noreferrer" class="button download-cv">
                     {{ .label }}
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-to-line-icon lucide-arrow-down-to-line">
@@ -65,15 +65,13 @@
     {{ end }}
 
     <div class="row scroll-down">
-      <div class="col-12">
-        <div class="scroll-down text-center">
-          {{ $first := index (.Site.Menus.main) 1 }}
-          <a href="{{ $first.URL }}">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down chevron">
-              <path d="m6 9 6 6 6-6"/>
-            </svg>
-          </a>
-        </div>
+      <div class="col-12 text-center">
+        {{ $first := index (.Site.Menus.main) 1 }}
+        <a href="{{ $first.URL }}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down chevron">
+            <path d="m6 9 6 6 6-6"/>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
