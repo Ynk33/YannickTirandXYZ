@@ -266,7 +266,7 @@ var Grid = (function () {
       )
       this.$details = $('<div class="og-details"></div>').append(
         this.$title,
-        this.$skills,
+        // this.$skills,
         this.$description,
         this.$href,
       );
