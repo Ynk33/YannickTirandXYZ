@@ -67,7 +67,7 @@ portfolio:
     - name: YankaForge — Yankify
       image: 'images/portfolio/yankaforge.jpg'
       url: https://github.com/Ynk33/YankaForge
-      description: While being on professional hiatus, I worked on several personal projects to stay up to date with the latest technologies. YankaForge is a headless Wordpress theme designed to use the powerful Wordpress back-office as a REST API. Yankify is a NextJS frontend that consumes the YankaForge API to create a fast and responsive website. Alongside those projects, I also created a set of tools based on NodeJS and the Github API to accelerate the development and the deployment of projects based on YankaForge and Yankify.
+      description: YankaForge is a headless Wordpress theme designed to use the powerful Wordpress back-office as a REST API. Yankify is a NextJS frontend that consumes the YankaForge API to create a fast and responsive website. Alongside those projects, I also created a set of tools based on NodeJS and the Github API to accelerate the development and the deployment of projects based on YankaForge and Yankify.
       skills:
         - name: 'NextJS'
           icon: 'images/icons/nextjs.svg'
